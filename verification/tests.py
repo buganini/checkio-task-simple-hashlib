@@ -7,30 +7,39 @@ Each test is dict with
     "explanation" -- not necessary key, it's using for additional info in animation.
 """
 
+import hashlib
+
+
 
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": ('welcome to pycon','md5'),
+            "answer": hashlib.md5(b'welcome to simple pycon game').hexdigest()
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        }
-    ],
-    "Extra": [
-        {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": ('welcome to pycon', 'sha224'),
+            "answer": hashlib.sha224(b'welcome to pycon').hexdigest()
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
+            "input": ('welcome to pycon', 'sha256'),
+            "answer": hashlib.sha256(b'welcome to pycon').hexdigest()
+        },
+        {
+            "input": ('welcome to pycon', 'sha384'),
+            "answer": hashlib.sha384(b'welcome to pycon').hexdigest()
+        },
+        {
+            "input": ('welcome to pycon', 'sha512'),
+            "answer": hashlib.sha512(b'welcome to pycon').hexdigest()
+        },
+        {
+            "input": ('welcome to pycon', 'sha1'),
+            "answer": hashlib.sha1(b'welcome to pycon').hexdigest()
         }
+
+
+
+
     ]
-}
+    }
