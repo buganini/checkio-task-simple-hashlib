@@ -32,28 +32,28 @@ for hash_f in hashfunc_dic:
 TESTS = {
     "Basics": [
         {
-            "input": ('welcome to pycon','md5'),
-            "answer": hash_text('welcome to pycon','md5')
+            "input": (b'welcome to pycon','md5'),
+            "answer": hash_text(b'welcome to pycon','md5')
         },
         {
-            "input": ('welcome to pycon', 'sha224'),
-            "answer": hash_text('welcome to pycon','sha224')
+            "input": (b'welcome to pycon', 'sha224'),
+            "answer": hash_text(b'welcome to pycon','sha224')
         },
         {
-            "input": ('welcome to pycon', 'sha256'),
-            "answer": hash_text('welcome to pycon','sha256')
+            "input": (b'welcome to pycon', 'sha256'),
+            "answer": hash_text(b'welcome to pycon','sha256')
         },
         {
-            "input": ('welcome to pycon', 'sha384'),
-            "answer": hash_text('welcome to pycon','sha384')
+            "input": (b'welcome to pycon', 'sha384'),
+            "answer": hash_text(b'welcome to pycon','sha384')
         },
         {
-            "input": ('welcome to pycon', 'sha512'),
-            "answer": hash_text('welcome to pycon','sha512')
+            "input": (b'welcome to pycon', 'sha512'),
+            "answer": hash_text(b'welcome to pycon','sha512')
         },
         {
-            "input": ('welcome to pycon', 'sha1'),
-            "answer": hash_text('welcome to pycon','sha1')
+            "input": (b'welcome to pycon', 'sha1'),
+            "answer": hash_text(b'welcome to pycon','sha1')
         }
 
     ],
