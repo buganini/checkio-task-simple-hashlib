@@ -9,6 +9,15 @@ Each test is dict with
 
 TESTS = {
     "Basics": [
+
+        {
+            "input": ['welcome', 'md5'],
+            "answer": '40be4e59b9a2a2b5dffb918c0e86b3d7'
+        },
+        {
+            "input": ['happy spam', 'sha224'],
+            "answer": '6e9dc3e01d57f1598c2b40ce59fc3527e698c77b15d0840ae96a8b5e'
+        },
         {
             "input": ['welcome to pycon', 'sha224'],
             "answer": 'f0ac92efb1ff56b9be0e6da46c8ae1a8d4ae398b089c9b9eaea41269'
