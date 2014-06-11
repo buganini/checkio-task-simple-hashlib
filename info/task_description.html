@@ -1,19 +1,22 @@
-<p><i>In a correctly designed system, a plain password is not stored in the database. Instead, a hash of the password is stored. You are going to verify a password and you will need to use the same one-way function to calculate the hash and do a comparison.</i>
+<p>
+    In a correctly designed system, a plain password is not stored in the database.
+    Instead, a hash of the password is stored.
+    You are going to verify a password and
+    you will need to use the same one-way function to calculate the hash and do a comparison.
 </p>
 
 
 <p>
-    <strong>Input: </strong> Two string arguments. One is the string to be hashed, another is the hash algorithm.
+    <strong>Input: </strong> Two arguments. A string to be hashed and a hash algorithm as a string.
 </p>
 
 <p>
-    <strong>Output: </strong> String, hexadecimal hash for for input string using given algorithm
+    <strong>Output: </strong> Hexadecimal hash for for input string using given algorithm as a string.
 </p>
 
 
 
 <div class="for_info_only">
-    <p><i></i></p>
     <p>
         <strong>Example:</strong>
     </p>
@@ -23,3 +26,8 @@
     </pre>
 </div>
 
+<p>
+    <strong>Precondition:</strong><br>
+    algorithm in ("md5", "sha224", "sha256", "sha384", "sha512", "sha1")<br>
+    0 &le; len(hashed_string) &le; 2**10
+</p>

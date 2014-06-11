@@ -43,7 +43,7 @@ api.add_listener(
             'python-3': cover_codes.unwrap_args
         },
         # checker=None,  # checkers.float.comparison(2)
-        add_allowed_modules=['hashlib',],
+        # add_allowed_modules=['hashlib',],
         # add_close_builtins=[],
         # remove_allowed_modules=[]
     ).on_ready)
